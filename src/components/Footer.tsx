@@ -5,7 +5,7 @@ const Footer = () => (
         <span className="font-heading text-lg font-semibold">
           Richmond Carpentry — Portishead, North Somerset
         </span>
-        <nav className="flex gap-6">
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           {["Services", "Work", "Contact"].map((l) => (
             <a
               key={l}
@@ -15,6 +15,14 @@ const Footer = () => (
               {l}
             </a>
           ))}
+          <a
+            href="https://www.google.com/maps?cid=3086175613760891844"
+            target="_blank"
+            rel="noopener"
+            className="text-sm text-footer-foreground/70 hover:text-primary transition-colors duration-300 font-body"
+          >
+            Find us on Google
+          </a>
         </nav>
         <span className="text-sm text-footer-foreground/60 font-body">
           © Richmond Carpentry 2025

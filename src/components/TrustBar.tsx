@@ -20,7 +20,7 @@ const TrustBar = () => {
             style={{ transitionDelay: visible ? `${i * 150}ms` : "0ms" }}
           >
             {item.logo ? (
-              <img src={item.logo} alt="City & Guilds" className="h-7 w-auto" />
+              <img src={item.logo} alt="City & Guilds" width={1024} height={630} className="h-7 w-auto" />
             ) : (
               <span className="text-2xl" role="img" aria-hidden="true">{item.icon}</span>
             )}

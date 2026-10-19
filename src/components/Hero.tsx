@@ -37,7 +37,9 @@ const Hero = () => {
           <div className="order-1 relative min-h-[47vh] overflow-hidden md:order-2 md:min-h-screen">
             <img
               src={heroImg}
-              alt="Kitchen carpentry project"
+              alt="Black shaker kitchen with white marble-effect quartz island and brass handles"
+              width={1200}
+              height={1600}
               className="absolute inset-x-0 top-0 h-[180%] w-full object-cover object-top"
               loading="lazy"
             />

@@ -1,8 +1,9 @@
 import { useState, type FormEvent } from "react";
-import { Phone, Mail, Send, Loader2 } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Loader2 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const FORMSPREE_URL = "https://formspree.io/f/mbdpvnod";
+const GOOGLE_MAPS_URL = "https://www.google.com/maps?cid=3086175613760891844";
 
 const Contact = () => {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -60,6 +61,17 @@ const Contact = () => {
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <span className="font-body font-medium">rcsportishead@gmail.com</span>
+              </a>
+              <a
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noopener"
+                className="group flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+              >
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <MapPin className="w-5 h-5 text-primary" />
+                </div>
+                <span className="font-body font-medium">Find us on Google</span>
               </a>
             </div>
           </div>
