@@ -41,7 +41,8 @@ const Hero = () => {
               width={1200}
               height={1600}
               className="absolute inset-x-0 top-0 h-[180%] w-full object-cover object-top"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         </div>

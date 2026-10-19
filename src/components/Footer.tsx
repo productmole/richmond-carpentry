@@ -25,7 +25,7 @@ const Footer = () => (
           </a>
         </nav>
         <span className="text-sm text-footer-foreground/60 font-body">
-          © Richmond Carpentry 2025
+          © Richmond Carpentry {new Date().getFullYear()}
         </span>
       </div>
       <div className="text-center text-xs text-footer-foreground/50 font-body">
